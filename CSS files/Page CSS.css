@@ -18,3 +18,336 @@
         }
     }
     
+    .container {
+      font-family:'roboto condensed', sans-serif;
+      text-align: center;
+      max-width: 200px;
+      box-shadow: 0 0 20px rgba(0, 13, 131, 0.3);
+      background: rgb(0, 10, 131);
+      align-items: center;
+      border-radius: 15px;
+      width: 400px;
+      height: 300px;
+      margin: 0 auto 20px auto;
+      padding: 20px;
+      padding-bottom: 300px;
+    }
+    
+      
+      .image {
+        border-radius: 5px;
+        width: 150px; 
+        height: 150px;
+        object-fit: cover;
+        margin: 0 auto 20px auto;
+        align-items: center;
+        display: block;
+      }
+      
+    h1 { 
+      color: rgb(0, 13, 131);
+      margin-right: 35%;
+    }
+    
+    span {
+      color: rgb(0, 13, 131);
+    }
+    
+    #left {float: left;
+    }
+    
+    #top {float: none;
+    }
+    
+    #right {float: right;
+    }
+    
+    .title { 
+        font-size: 1.2em;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+    
+    .discription {
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .titel {
+        font-size: 5em;
+        font-weight: bold;
+        text-align: center;
+    
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .collumn {
+      float: left;
+      width: 0;
+      color: #ffff;
+    }
+    
+    .row ::after {
+      content: "";
+      clear: both;
+      display: table;
+      color: #ffff;
+      align-items: center;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #ffff;
+      visibility: hidden;
+      opacity: 0;
+    }
+    
+    
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    
+    a {text-decoration: none;}
+    
+    p {text-decoration: none;}
+    
+    .float{
+      position:fixed;
+      width:60px;
+      height:60px;
+      bottom:40px;
+      right:100%;
+        left: 20px;
+      background-color:rgb(0, 10, 131);
+      color:rgb(255, 255, 255);
+      border-radius:50px;
+      text-align:center;
+      box-shadow: 2px 2px 3px #999;
+    }
+    
+    .my-float{
+      font-size:24px;
+      margin-top:18px;
+    }
+    
+    a.float + div.label-container {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s ease;
+    }
+    
+    a.float:hover + div.label-container{
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    .label-container{
+      position:fixed;
+      bottom:48px;
+      right:100%;
+      left: 80px;
+      display:table;
+      visibility: hidden;
+    }
+    
+    .label-text{
+      color:#FFF;
+      background:rgba(51,51,51,0.5);
+      display:table-cell;
+      vertical-align:middle;
+      padding:10px;
+      border-radius:3px;
+    }
+    
+    .label-arrow{
+      display:table-cell;
+      vertical-align:middle;
+      color:#333;
+      opacity:0.5;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 5px;
+      grid-row-gap: 20px;
+      }
+    
+      .float-right{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:rgb(0, 10, 131);
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        box-shadow: 2px 2px 3px #999;
+      }
+      
+      .my-float-right{
+        font-size:24px;
+        margin-top:18px;
+      }
+      
+      a.float-right + div.label-container-right {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s ease;
+      }
+      
+      a.float-right:hover + div.label-container-right{ 
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .label-container-right{
+        position:fixed;
+        bottom:48px;
+        right:100px;
+        display:table;
+        visibility: hidden;
+      }
+      
+      
+      .label-text{
+        color:#FFF;
+      background:rgba(51,51,51,0.5);
+      display:table-cell;
+      vertical-align:middle;
+      padding:10px;
+      border-radius:3px;
+      }
+      
+      .label-arrow{
+        display:table-cell;
+        vertical-align:middle;
+        color:#333;
+        opacity:0.5;
+      }
+    
+     
+    
+      * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .wrapper {
+        width: 1170px;
+        margin: auto;
+    }
+    
+    .nav-area {
+        float: right;
+        list-style: none;
+        margin-top: 30px; 
+        margin-left: 10%;
+    }
+    .nav-area li {
+        display: inline-block;
+    }
+    .nav-area li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-family: poppins;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .nav-area li a:hover {
+        background: #fff;
+        color: #333;
+    }
+    .logo {
+        float: left;
+    }
+    .logo img {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .welcome-text {
+        position: absolute;
+        width: 600px;
+        height: 300px;
+        margin: 20% 30%;
+        text-align: center;
+    }
+    .welcome-text h1 {
+        text-align: center;
+        color: rgb(110, 110, 110);
+        text-transform: uppercase;
+        font-size: 60px;
+    }
+    .welcome-text h1 span {
+        color: #c20091;
+    }
+    .welcome-text a {
+        border: 1px solid #fff;
+        padding: 10px 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 20px;
+        display: inline-block;
+        color: #fff;
+    }
+    .welcome-text a:hover {
+        background: #fff;
+        color: #333;
+    }
+    
+    @media (max-width:600px) {
+        .wrapper {
+            width: 100%;
+        }
+        .logo {
+            float: none;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+        img {
+            width: auto;
+        }
+        .nav-area {
+            float: none;
+            margin-top: 0;
+        }
+        .nav-area li a {
+            padding: 5px;
+            font-size: 11px;
+        }
+        .nav-area {
+            text-align: center;
+        }
+        .welcome-text {
+            width: 100%;
+            height: auto;
+            margin: 30% 0;
+        }
+        .welcome-text h1 {
+            font-size: 30px;
+        }
+    }
+    
+    .grid {
+      align-items: left;
+      padding-right: 30%;
+      padding-left: 30%;
+      margin-top: 5%;
+    }
